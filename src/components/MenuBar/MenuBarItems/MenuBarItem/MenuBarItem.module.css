@@ -1,5 +1,5 @@
 .MenuBarItem {
-    background-color: rgb(200, 175, 64);
+    background-color: rgb(202, 72, 20);
     margin: 10px 0;
     box-sizing: border-box;
     display: block;
@@ -7,7 +7,7 @@
 }
 
 .MenuBarItem a {
-    color: #8f5c2c;
+    color: #ffffff;
     text-decoration: none;
     width: 100%;
     box-sizing: border-box;
@@ -19,7 +19,7 @@
 }
 
 .MenuBarItem a:hover, .MenuBarItem a:active, .MenuBarItem a.active {
-    background-color: rgb(54, 44, 143);
+    background-color: rgb(180, 97, 76);
     color: #40A4C8;
 }
 

@@ -113,7 +113,7 @@ class Auth extends Component {
             </form>
         );
         return (
-            <div className={classes.Auth}>
+            <div className={classes.Login}>
                 {form}
                 <Button
                     clicked={this.switchOffModeHandler}

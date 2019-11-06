@@ -1,15 +1,16 @@
-.Auth {
+.Login {
     margin: 20px auto;
     width: 80%;
     text-align: center;
     box-shadow: 0 2px 3px #ccc;
     border: 1px solid #eee;
+    background-color: white;
     padding: 10px;
     box-sizing: border-box;
 }
 
 @media(min-width: 600px) {
-    .Auth {
+    .Login {
         width: 500px;
     }
 }
