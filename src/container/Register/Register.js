@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 
 import Input from '../../components/UI/Input/Input';
 import Button from '../../components/UI/Button/Button';
-import Modal from '../../components/UI/Modal/Modal';
-import Register from '../Register/Register';
-import classes from './Login.module.css';
+import classes from './Register.module.css';
 
 class Auth extends Component {
     state = {
@@ -116,16 +114,8 @@ class Auth extends Component {
         );
         return (
             <div className={classes.Login}>
-                <h2>Login</h2>
+                <h2>Registration</h2>
                 {form}
-                <Button
-                    clicked={this.switchOffModeHandler}
-                    btnType='Danger'>SWITCH TO SIGNUP</Button>
-
-                <Modal show={this.state.isSignUp} modalClosed={this.switchOffModeHandler}>
-                    <Register />
-                    <Button btnType='Danger' clicked={this.switchOffModeHandler}>close</Button>
-                </Modal>
             </div>
         );
     }
