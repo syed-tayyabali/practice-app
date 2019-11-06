@@ -1,0 +1,14 @@
+.Footer {
+    background-color: rgb(199, 195, 195);
+    text-align: center;
+    margin: 0
+}
+
+.paraOne {
+    font-size: 12px;
+}
+
+.marginAround {
+    margin-left: 10px;
+    margin-right: 10px;
+}
