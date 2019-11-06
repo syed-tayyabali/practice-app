@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
 
 import Input from '../../components/UI/Input/Input';
 import Button from '../../components/UI/Button/Button';
@@ -85,6 +86,21 @@ class Auth extends Component {
         this.setState(prevState => {
             return { isSignUp: !prevState.isSignUp };
         });
+    }
+
+    submitHandler = (event) => {
+        event.preventDefault();
+        let res = localStorage.getItem(`${this.state.controls.email.value}`);
+        if (res === null || res === undefined) {
+            alert('invalid email');
+            return;
+        }
+        let user = JSON.parse(res);
+        if (user.password !== this.state.controls.password.value) {
+            alert('invalid password');
+            return;
+        }
+        return this.props.history.replace('/');
     }
 
     render() {

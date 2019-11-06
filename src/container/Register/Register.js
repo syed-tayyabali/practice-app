@@ -85,6 +85,17 @@ class Auth extends Component {
         });
     }
 
+    submitHandler = (event) => {
+        event.preventDefault();
+        let user = {
+            name: this.state.controls.email.value,
+            password: this.state.controls.password.value
+        };
+        localStorage.setItem(`${this.state.controls.email.value}`, JSON.stringify(user));
+        // console.log(this.state.controls.email.value);
+        // console.log(this.state.controls.password.value);
+    }
+
     render() {
         const formElementArray = [];
         for (let key in this.state.controls) {

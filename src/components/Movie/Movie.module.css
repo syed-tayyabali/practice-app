@@ -18,8 +18,12 @@
 .Side {
     background-color: white;
     margin-left: 3%;
-    width: 250px;
+    width: 200px;
     height: 550px;
     box-sizing: border-box;
     border-radius: 5px;
+}
+
+.Side li {
+    margin-top: 10px;
 }
